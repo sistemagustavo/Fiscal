@@ -1,0 +1,19 @@
+<?php
+function conectar(){
+try{
+		$pdo = new PDO('mysql:host=localhost;dbname=bd_vidracaria', 'root', '');
+        $pdo->exec("set names utf8");
+	
+	
+   }catch (PDOException $e){
+	 	$pdo = new PDO('mysql:host=mysql.sistemavidro.kinghost.net;dbname=sistemavidro0602', 'sistemavidro0602', '08glasstemperbh15');
+        $pdo->exec("set names utf8");
+	
+	   //echo $e-> getMessagem();
+  }
+return $pdo;
+
+}
+
+
+
