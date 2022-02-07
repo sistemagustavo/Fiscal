@@ -141,7 +141,7 @@ $(document).ready(function(){
                     success:function(result){
                         objeto.parent().html(conteudoNovo);
                        $('body').append(result); 
-						 //location.reload();
+						 location.reload();
 					
                     }
                  })//end ajax
